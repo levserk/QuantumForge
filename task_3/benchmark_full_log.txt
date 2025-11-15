@@ -1,0 +1,616 @@
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 162, in create_collection
+    check_index_name(name)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 79, in check_index_name
+    raise ValueError(msg)
+ValueError: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection kb_Baseline already exists
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 162, in create_collection
+    check_index_name(name)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 79, in check_index_name
+    raise ValueError(msg)
+ValueError: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection kb_Baseline already exists
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 166, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        id=id,
+        ^^^^^^
+    ...<5 lines>...
+        database=database,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/db/mixins/sysdb.py", line 267, in create_collection
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 220, in main
+    result = evaluate_configuration(
+        model_name=model,
+    ...<3 lines>...
+        test_queries=test_queries
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 146, in evaluate_configuration
+    collection = create_index(chunks, model_name, config_name)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/benchmark_search.py", line 92, in create_index
+    collection = client.create_collection(
+        name=collection_name,
+        embedding_function=embedding_func,
+        metadata={"description": "LOTR knowledge base"}
+    )
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/client.py", line 198, in create_collection
+    return self._server.create_collection(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name=name,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        get_or_create=get_or_create,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 162, in create_collection
+    check_index_name(name)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/lev/yandex-practicum/QuantumForge/task_3/.venv/lib/python3.13/site-packages/chromadb/api/segment.py", line 79, in check_index_name
+    raise ValueError(msg)
+ValueError: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+================================================================================
+БЕНЧМАРК ВЕКТОРНОГО ПОИСКА
+================================================================================
+
+Загружено тестовых запросов: 10
+
+================================================================================
+ТЕСТ: sentence-transformers/all-mpnet-base-v2
+Chunk size: 1000, overlap: 200 (Baseline)
+================================================================================
+Загружено документов: 70
+Создано чанков: 325
+Создание индекса...
+Индекс создан за 69.29s
+
+Тестирование запросов:
+  [1] ✓ 'Кто такой Биир?' → Биир.txt (sim: 0.334)
+  [2] ✗ 'Расскажи про Гыена' → Гэка.txt (sim: 0.196)
+  [3] ✓ 'Что случилось с Ву?' → Ву.txt (sim: 0.139)
+  [4] ✓ 'Что такое Рыин Кэен?' → Рыин_Кэен.txt (sim: 0.316)
+  [5] ✓ 'Расскажи про хехов' → Эльфы.txt (sim: 0.194)
+  [6] ✓ 'Что известно о гызах?' → Гоан.txt (sim: 0.350)
+  [7] ✗ 'Расскажи про Доин Каин' → Рыин_Кэен.txt (sim: 0.122)
+  [8] ✗ 'Кто сражался в битвах?' → Беин.txt (sim: 0.324)
+  [9] ✓ 'Что известно о войнах?' → Ву.txt (sim: 0.273)
+  [10] ✗ 'Какие существа упоминаются?' → Гоан.txt (sim: 0.061)
+
+Результаты:
+  Recall@1: 60.0%
+  Recall@3: 60.0%
+  Avg similarity: 0.231
+
+================================================================================
+ТЕСТ: sentence-transformers/all-mpnet-base-v2
+Chunk size: 1000, overlap: 400 (High overlap)
+================================================================================
+Загружено документов: 70
+Создано чанков: 402
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/all-mpnet-base-v2
+Chunk size: 600, overlap: 200 (Small chunks)
+================================================================================
+Загружено документов: 70
+Создано чанков: 616
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/all-mpnet-base-v2
+Chunk size: 600, overlap: 300 (Small + high)
+================================================================================
+Загружено документов: 70
+Создано чанков: 786
+Создание индекса...
+
+❌ Ошибка: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+
+================================================================================
+ТЕСТ: sentence-transformers/multi-qa-mpnet-base-dot-v1
+Chunk size: 1000, overlap: 200 (Baseline)
+================================================================================
+Загружено документов: 70
+Создано чанков: 325
+Создание индекса...
+
+❌ Ошибка: Collection kb_Baseline already exists
+
+================================================================================
+ТЕСТ: sentence-transformers/multi-qa-mpnet-base-dot-v1
+Chunk size: 1000, overlap: 400 (High overlap)
+================================================================================
+Загружено документов: 70
+Создано чанков: 402
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/multi-qa-mpnet-base-dot-v1
+Chunk size: 600, overlap: 200 (Small chunks)
+================================================================================
+Загружено документов: 70
+Создано чанков: 616
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/multi-qa-mpnet-base-dot-v1
+Chunk size: 600, overlap: 300 (Small + high)
+================================================================================
+Загружено документов: 70
+Создано чанков: 786
+Создание индекса...
+
+❌ Ошибка: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+
+================================================================================
+ТЕСТ: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+Chunk size: 1000, overlap: 200 (Baseline)
+================================================================================
+Загружено документов: 70
+Создано чанков: 325
+Создание индекса...
+
+❌ Ошибка: Collection kb_Baseline already exists
+
+================================================================================
+ТЕСТ: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+Chunk size: 1000, overlap: 400 (High overlap)
+================================================================================
+Загружено документов: 70
+Создано чанков: 402
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+Chunk size: 600, overlap: 200 (Small chunks)
+================================================================================
+Загружено документов: 70
+Создано чанков: 616
+Создание индекса...
+
+❌ Ошибка: attempt to write a readonly database
+
+================================================================================
+ТЕСТ: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+Chunk size: 600, overlap: 300 (Small + high)
+================================================================================
+Загружено документов: 70
+Создано чанков: 786
+Создание индекса...
+
+❌ Ошибка: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got kb_Small_+_high
+
+================================================================================
+ИТОГОВАЯ ТАБЛИЦА РЕЗУЛЬТАТОВ
+================================================================================
+
+Модель                                             Config          R@1      R@3      Sim      Time    
+----------------------------------------------------------------------------------------------------
+all-mpnet-base-v2                                  Baseline          60.0%   60.0%  0.231   69.3s
+
+================================================================================
+ЛУЧШАЯ КОНФИГУРАЦИЯ:
+  Модель: sentence-transformers/all-mpnet-base-v2
+  Chunk size: 1000, overlap: 200
+  Recall@1: 60.0%
+  Recall@3: 60.0%
+  Avg similarity: 0.231
+================================================================================
+
+✅ Результаты сохранены в benchmark_results.json
