@@ -1,0 +1,152 @@
+[
+  {
+    "query": "Кто такой Биир?",
+    "expected_file": "Биир.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Расскажи про Гыена",
+    "expected_file": "Гыен.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Что случилось с Ву?",
+    "expected_file": "Ву.txt",
+    "type": "character_event"
+  },
+  {
+    "query": "Кто такой Гоан?",
+    "expected_file": "Гоан.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Расскажи про Баиль",
+    "expected_file": "Баиль.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Кто такой Беин?",
+    "expected_file": "Беин.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Что известно о Ваас?",
+    "expected_file": "Ваас.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Расскажи про Гиар",
+    "expected_file": "Гиар.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Кто такой Гэка?",
+    "expected_file": "Гэка.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Что известно о Бу?",
+    "expected_file": "Бу.txt",
+    "type": "character_direct"
+  },
+  {
+    "query": "Кто отец Гыена?",
+    "expected_file": "Гыен.txt",
+    "type": "relationship"
+  },
+  {
+    "query": "Семья Биира",
+    "expected_file": "Биир.txt",
+    "type": "relationship"
+  },
+  {
+    "query": "Кто брат Гыена?",
+    "expected_file": "Гыен.txt",
+    "type": "relationship"
+  },
+  {
+    "query": "Родственники Ба",
+    "expected_file": "Ба.txt",
+    "type": "relationship"
+  },
+  {
+    "query": "Потомки Гоан",
+    "expected_file": "Гоан.txt",
+    "type": "relationship"
+  },
+  {
+    "query": "Где был Ву?",
+    "expected_file": "Ву.txt",
+    "type": "event_location"
+  },
+  {
+    "query": "Что произошло с Беин?",
+    "expected_file": "Беин.txt",
+    "type": "event"
+  },
+  {
+    "query": "История Баиль",
+    "expected_file": "Баиль.txt",
+    "type": "event"
+  },
+  {
+    "query": "Судьба Гиар",
+    "expected_file": "Гиар.txt",
+    "type": "event"
+  },
+  {
+    "query": "Приключения Ваас",
+    "expected_file": "Ваас.txt",
+    "type": "event"
+  },
+  {
+    "query": "Что такое Рыин Кэен?",
+    "expected_file": "Рыин_Кэен.txt",
+    "type": "artifact"
+  },
+  {
+    "query": "Расскажи про Доин Каин",
+    "expected_file": "Доин_Каин.txt",
+    "type": "artifact"
+  },
+  {
+    "query": "Что такое Железная корона?",
+    "expected_file": "Железная_корона.txt",
+    "type": "artifact"
+  },
+  {
+    "query": "Для чего нужен Драконий шлем?",
+    "expected_file": "Драконий_шлем_Дэдене.txt",
+    "type": "artifact"
+  },
+  {
+    "query": "Что известно о Звезде?",
+    "expected_file": "Звезда_дунэдайн.txt",
+    "type": "artifact"
+  },
+  {
+    "query": "Расскажи про хехов",
+    "expected_file": "Эльфы.txt",
+    "type": "race"
+  },
+  {
+    "query": "Что известно о гызах?",
+    "expected_file": "Гоан.txt",
+    "type": "race"
+  },
+  {
+    "query": "Какие народы существуют?",
+    "expected_file": "Народы.txt",
+    "type": "general"
+  },
+  {
+    "query": "Что известно о войнах?",
+    "expected_file": "Ву.txt",
+    "type": "general"
+  },
+  {
+    "query": "Кто сражался в битвах?",
+    "expected_file": "Ба.txt",
+    "type": "general"
+  }
+]
